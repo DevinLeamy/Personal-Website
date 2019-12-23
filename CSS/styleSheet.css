@@ -1,0 +1,321 @@
+/*  My Offical StyleSheet */
+
+#pageOne {
+    background-image: url("../Images/macbookPhoto.jpg");
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#navbar {
+    position: absolute;
+    z-index: 51;
+    height: 50px;
+    min-width: 100%;
+    transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;  
+    -webkit-transition: background-color 0.5s linear; 
+    -ms-transition: background-color 0.5s linear; 
+    padding: 10px;
+    
+} 
+#navbar .navbarElement {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;  
+    -webkit-transition: color 0.5s linear; 
+    -ms-transition: color 0.5s linear; 
+}
+.sticky {
+    overflow: hidden;
+    top: 0;
+    background-color: white;
+    min-width: 100%;
+    color: black;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+
+} 
+#containerForTextFields {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+} 
+
+#welcome_message {
+    position: absolute;
+    color: white;
+    margin: auto;
+    width: 300px;
+    top: 46%;
+    left: 50%;
+    margin-left: -150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    border: solid white;
+    border-width: 4px 4px 4px 4px;
+}
+
+#arrow_button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: solid white;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 0 10px 10px 0;
+    bottom: 60px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 50;
+    display: inline;
+}
+
+/* Page Two */ 
+
+#pageTwo {
+    position: relative;
+}
+#pageTwoAnchor {
+    position: relative;
+    top: 30px;
+}
+#itemContainer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: ltr;
+    width: 1300px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.item {
+    /* border: solid #AAAAAA; */
+    /* border: solid white; */
+    border: solid black;
+    border-width: 2px 2px 2px 2px;
+    width: 500px;
+    height: 200px;
+    /* background-color: #FFDC00; */
+    /* background-color: #001f3f; */
+    background-color: #7FDBFF;
+}
+.itemImage {
+    margin: 30px;
+    float: left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+.itemText {
+    width: 450px;
+    height: 180px;
+    position: absolute;
+    z-index: 2;
+}
+#html {
+    background-image: url("../Images/html.png");
+}
+#python {
+    background-image: url("../Images/python.png");
+}
+#java {
+    background-image: url("../Images/java.png");
+}
+#interests {
+    background-image: url("../Images/macbookPhoto.jpg")
+}
+#goals {
+    background-image: url("../Images/goals.jpg");
+}
+#passTimes {
+    background-image: url("../Images/passTimes.jpg")
+}
+#cpp {
+    background-image: url("../Images/cpp.png")
+}
+#pursuits {
+    background-image: url("../Images/pursuits.png")
+}
+/* Page Three */
+
+#pageThree {
+    position: relative;
+    max-width: 50%;
+    min-height: 100%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#projectDisplay {
+    position: relative;
+    min-height: 100%; 
+    min-width: 80%;
+    top: -2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style-type: none;
+    padding: 0;
+    background-color: #525252;
+}
+#project {
+    position: relative;
+    min-height: 300px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 40px;
+    color: black;
+    background-color: #FFC308;
+    border-radius: 20px;
+}
+
+.projectImage {
+    left: 40px;
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    top: 30px;
+    display: block;
+}
+
+#projectName {
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 200px;
+    text-align: left;
+    bottom: 20px;
+
+}
+
+#projectDescription {
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    left: 300px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#projectOne {
+    background-image: url("../Images/ProjectPhoto.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#projectTwo {
+    background-image: url("../Images/ACPCPhoto.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#projectThree {
+    background-image: url("../Images/CCCPhoto3.png");
+    -webkit-background-size: cover; 
+     -moz-background-size: cover; 
+     -o-background-size: cover; 
+     background-size: cover; 
+}
+/*  Page Four */ 
+
+#pageFour {
+    position: relative;
+    margin-top: 100px;
+    background-color: gray;
+}
+
+/* Test Form */
+
+input[type=text], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+/* Test Form End */
+
+
+/* Dividers */
+#pageOneTwoDivider {
+    position: relative;
+    background-color: #525252;
+    min-width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20%;
+    top: 30px;
+}
+#pageOneTwoDividerText {
+    font-weight: 400;
+    color: white;
+}
+#pageOneTwoDividerParagraph {
+    width: 70%;
+    color: white;
+}
+#grayDivider {
+    position: relative;
+    background-color: #525252;
+    min-height: 10%;
+    min-width: 100%;
+}
+
+/* All of the website */
+.anchor {
+    position: relative;
+    top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.page {
+    height: 100%;
+}
