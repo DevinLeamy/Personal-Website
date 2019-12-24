@@ -26,6 +26,13 @@
         <div id="pageTwoHeaderDiv"><h1  id="pageTwoHeader">Hi I'm Devin Leamy</h1></div>
         <div id="itemContainer">
             <div class="item">
+                <div class="itemImage" id="pursuits"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Pursuits</h1>
+                    <p class="itemText">I'm a highschool student pursuing placement in software engineering and CS programs as well as a summer internship. Additionally, I am striving for software engineering, CP, math, business and management knowhow as this will help me place in contests, build cool software and accomplish my overarching goal.</p>
+                </div>
+            </div>
+            <div class="item">
                 <div class="itemImage" id="html"></div>
                 <div class="itemTextDiv">
                     <h1 class="itemTitle">HTML & CSS</h1>
@@ -61,10 +68,10 @@
                 </div>
             </div>
             <div class="item">
-                <div class="itemImage" id="pursuits"></div>
+                <div class="itemImage" id="passTimes"></div>
                 <div class="itemTextDiv">
-                    <h1 class="itemTitle">Pursuits</h1>
-                    <p class="itemText">I'm a highschool student pursuing placement in software engineering and CS programs as well as a summer internship. Additionally, I am striving for software engineering, CP, math, business and management knowhow as this will help me place in contests, build cool software and accomplish my overarching goal.</p>
+                    <h1 class="itemTitle">Pastimes</h1>
+                    <p class="itemText">Away from school some of my favorite things to do are participate in robotics, play chess, workout, hangout with friends, volunteer, go bouldering and, well, program. More generally, I like to learn, stay social, engaged and in good health and, most notably, have fun. </p>
                 </div>
             </div>
             <div class="item">
@@ -72,13 +79,6 @@
                 <div class="itemTextDiv">
                     <h1 class="itemTitle">C++</h1>
                     <p class="itemText">Using C++ over the last 4 Months has been very insightful. Coming from languages like Python and Java, C++ was anything but familiar but through competitive programming I've come to really enjoy C++. It's lower level nature has taught me alot about pointers, stacks and memory and especially in CP it's speed is a gamechanger.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="itemImage" id="passTimes"></div>
-                <div class="itemTextDiv">
-                    <h1 class="itemTitle">Pastimes</h1>
-                    <p class="itemText">Away from school some of my favorite things to do are participate in robotics, play chess, workout, hangout with friends, volunteer, go bouldering and, well, program. More generally, I like to learn, stay social, engaged and in good health and, most notably, have fun. </p>
                 </div>
             </div>
         </div>
@@ -119,26 +119,21 @@
                 </ul>
             </div>
         </div>
-
     </div>
-    <!--PAGE FOUR-->
-    <div id="pageFour" class="page"> <a id="pageFourAnchor"></a>
-        <div id="messageInput" action="action_page.php"> 
-            <form id="messageMeForm">
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress" name="lastname" placeholder="Your email address_____">
-    
-                
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                
-                    <input id="submitButton" type="submit" value="Submit">
-                    <!--Onclick submitButton send an email from a set user email with all of the information included by the user-->
-            </form>
+    <div id="pageFour">
+        <div id="messageFormContainer">
+            <div id="messageFormCaption">Hit Me Up!</div>
+            <div id="contactMeText">Contact Me, let's talk projects and oppertunities.</div>
+            <div id="nameAndEmailDiv">
+                <textarea id="nameInput" type="text" placeholder="name"></textarea>
+                <textarea id="emailInput" type="text" placeholder="email"></textarea>
+            </div>
+            <textarea id="messageInput" type="text" placeholder="message"></textarea>
+            <input id="submitButton" type="button" value="submit"/>
+
         </div>
+        
+
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 

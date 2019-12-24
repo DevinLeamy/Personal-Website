@@ -137,7 +137,6 @@
     height: 225px;
     background-color: #FFDC00;
     /* background-color: #002952; */
-    /* background-color: #7FDBFF; */
 }
 .itemImage {
     margin: 30px;
@@ -258,12 +257,12 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .projectText {
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     width: 800px;
 }
 .projectContents {
-    font-size: 15px;
+    font-size: 18px;
     width: 800px;
     font-weight: 400;
     font-family: 'Courier New', Courier, monospace;
@@ -281,47 +280,92 @@
     background-image:  url("../Images/pageTwoBackground.png");
 }
 /*  Page Four */ 
-
 #pageFour {
+    background-color: #FFDC00;
+    min-width: 100%;
+    position: absolute;
+}
+#messageFormContainer {
     position: relative;
-    margin-top: 100px;
-    background-color: gray;
+    min-width: 60%;
+    min-height: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#messageFormCaption {
+    position: relative;
+    min-width: 100px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+#contactMeText {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#nameAndEmailDiv {
+    position: relative;
+    width: 800px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: ltr;
+}
+#nameInput {
+    width: 380px;
+    margin-right: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 15px;
+    height: 17px;
+    overflow: hidden;
+}
+#emailInput {
+    width: 380px;
+    margin-right: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 15px;
+    height: 17px;
+    overflow: hidden;
+}
+#messageInput {
+    width: 780px;
+    position: relative;
+    height: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 15px;
+    overflow: hidden;
+}
+#submitButton {
+    position: relative;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -100px;
+}
+#submitButton:hover {
+    opacity: 0.8;
+}
+#saubmitButton:active,
+#submitButton:focus { 
+    outline: none; 
 }
 
-/* Test Form */
-
-input[type=text], textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px; 
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-
-/* Test Form End */
-
-
-/* Dividers */
 /* All of the website */
 .anchor {
     position: relative;
