@@ -33,11 +33,13 @@ firstly make my first page responsive and then make the whole website responsive
             <a href="#pageTwoAnchor"><i id="arrow_button"></i></a>
         </div>
     </div>
+    <a id="pageTwoAnchor"></a>
     <div id="pageTwo" class="page"> 
+        <div id="pageTwoHeaderDiv"><h1  id="pageTwoHeader">Hi I'm Devin Leamy</h1></div>
         <div id="itemContainer">
             <div class="item">
                 <div class="itemImage" id="html"></div>
-                <p class="itemText" id="htmlText"></p>
+                <p class="itemText" id="htmlText">This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.</p>
             </div>
             <div class="item">
                 <div class="itemImage" id="interests"></div>
@@ -52,15 +54,53 @@ firstly make my first page responsive and then make the whole website responsive
                 <div class="itemImage" id="java"></div>
             </div>
             <div class="item">
-                <div class="itemImage" id="passTimes"></div>
+                <div class="itemImage" id="pursuits"></div>
             </div>
             <div class="item">
                 <div class="itemImage" id="cpp"></div>
             </div>
             <div class="item">
-                <div class="itemImage" id="pursuits"></div>
+                <div class="itemImage" id="passTimes"></div>
             </div>
         </div>
+    </div>
+    <a class="anchor" id="pageThreeAnchor"></a>
+    <div id="pageThree" class="page">
+        <div id="projectContainer">
+            <div class="project">
+                <div class="projectImage" id="projectOne"></div>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">The Ultimate Path Finding Website</h1></li>
+                    <li><p class="projectText"> Want to learn how the most popular pathfinding algorithms work? Visit The Ultimate Path Finding Website and learn the fun way. Pick a start, end, draw barriers, pick an algorthm and watch as the algorithm conducts it's search. Create a nice barrier layout? Save it as a custom layout!</p></li>
+                    <li><h3 class="projectContents">Made with: Javascript & HTML & CSS</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="projectImage" id="projectTwo"></div>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Canadian Computing Competition</h1></li>
+                    <li><p class="projectText">The Canadian Computing Competition is a high school computing competition hosted by The University of Waterloo. Every year Canadian coders compete for a place at the stage 2 contest hosted at The University of Waterloo. I like many of these students have gone through the previous years of the contest in order to prepare and here are my solutions! </p></li>
+                    <li><h3 class="projectContents">Made with: Java & C++ & Python</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="projectImage" id="projectThree"></div>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Competitive Programming</h1></li>
+                    <li><p class="projectText">Competitive programming is in many ways what got me into programming. I really do like to solve problems... Here are some of my solutions to competitive programming problemsfrom Codeforces and Codechef as well as my solutions from contests hosted by: CodeVita and The University of Calgary Programming Club.</p></li>
+                    <li><h3 class="projectContents">Made with: C++ & Java</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="projectImage" id="projectFour"></div>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Maze Solution Findiner</h1></li>
+                    <li><p class="projectText">Even when waiting for food at at a restaurant mazes will find you. They are seemingly everywhere. I've created a program that will, give a maze [a matrix of 1's and 0's] find and print out a possible solution in a jpg file. </p></li>
+                    <li><h3 class="projectContents">Made with: Java</h3></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <!--DIVIDER-->
     <!-- <div style="position: relative; min-width: 100%; background-color: #525252; min-height: 20%; top: -18px">
@@ -135,7 +175,7 @@ firstly make my first page responsive and then make the whole website responsive
     </div> -->
 
     <!--PAGE THREE-->
-    <div id="pageThree" class="page"> <a class="anchor" id="pageThreeAnchor"></a>
+    <!-- <div id="pageThree" class="page"> <a class="anchor" id="pageThreeAnchor"></a>
         <ul id="projectDisplay">
             <li id="project">
                 <a href="https://devinleamy.github.io/The-Ultimate-Pathfinding-Website/" class="projectImage" id="projectOne"></a>
@@ -183,7 +223,7 @@ firstly make my first page responsive and then make the whole website responsive
 
         </ul>
         
-    </div>
+    </div> -->
 
     <!--PAGE FOUR-->
     <div id="pageFour" class="page"> <a id="pageFourAnchor"></a>
@@ -241,7 +281,6 @@ firstly make my first page responsive and then make the whole website responsive
             }
         } else {
             navbar.classList.remove("sticky")
-            // navbar.style.position = "absolute";
             for (i = 0; i < navbarElements.length; i++) {
                 navbarElements[i].style.color = "black";
             }
