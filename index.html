@@ -1,16 +1,3 @@
-<!--
-Goal #1: Now that the basics have been implemented it is time to start making the web page a whole lot 
-better looking. My next goal is going to be to make the front page look more professional. This starts
-with the nav bar. 
-Goal #2: I am quite happy with the front page so now I can start working on the second page as well as 
-the divider. I have establied that the websites is going to be primarily white, black and orange. 
-Goal #3: Currently my website has a layout and some information. The overall design is not done but I have
-finished the general design. Now I want to make my website responsive. As of now my website layout 
-only looks as it should at a certain screen size. In order to do this I am going to use CSS media
-queries. These are queries that react to screen width and height. My goal is to use media queries to 
-firstly make my first page responsive and then make the whole website responsive. 
--->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,21 +41,45 @@ firstly make my first page responsive and then make the whole website responsive
             </div>
             <div class="item">
                 <div class="itemImage" id="python"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Python</h1>
+                    <p class="itemText">Since my programming debut 8 months ago, coding scripts in Kali Linux, I have been learning Python. Over that time I've used many Python libraries including numpy, beautifulsoup, matplotlib and their face recognition library. I can now write Python scripts to do anything from computing lab data to face recognition.</p>
+                </div>
             </div>
             <div class="item">
                 <div class="itemImage" id="goals"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Goals</h1>
+                    <p class="itemText">Since getting into programming my biggest goal has been to start a tech company. I'm an entrepreneur at heart and I want this passion of mine to turn into something tangible. As of now like many entrepreneurs I am brainstorming, scrutinizing idea's, making plans and waiting for something convincing enough to act upon.</p>
+                </div>
             </div>
             <div class="item">
                 <div class="itemImage" id="java"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Java</h1>
+                    <p class="itemText">After getting into competitive programming 6 months back Java has been my go to. Over time I've expanded my Java repertoire learning Android Studio, the Java graphics and input-output API and the JavaMail API. Java is a multipurpose tool and I can use it as such. </p>
+                </div>
             </div>
             <div class="item">
                 <div class="itemImage" id="pursuits"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Pursuits</h1>
+                    <p class="itemText">I'm a highschool student pursuing placement in software engineering and CS programs as well as a summer internship. Additionally, I am striving for software engineering, CP, math, business and management knowhow as this will help me place in contests, build cool software and accomplish my overarching goal.</p>
+                </div>
             </div>
             <div class="item">
                 <div class="itemImage" id="cpp"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">C++</h1>
+                    <p class="itemText">Using C++ over the last 4 Months has been very insightful. Coming from languages like Python and Java, C++ was anything but familiar but through competitive programming I've come to really enjoy C++. It's lower level nature has taught me alot about pointers, stacks and memory and especially in CP it's speed is a gamechanger.</p>
+                </div>
             </div>
             <div class="item">
                 <div class="itemImage" id="passTimes"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Pastimes</h1>
+                    <p class="itemText">Away from school some of my favorite things to do are participate in robotics, play chess, workout, hangout with friends, volunteer, go bouldering and, well, program. More generally, I like to learn, stay social, engaged and in good health and, most notably, have fun. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -110,129 +121,6 @@ firstly make my first page responsive and then make the whole website responsive
         </div>
 
     </div>
-    <!--DIVIDER-->
-    <!-- <div style="position: relative; min-width: 100%; background-color: #525252; min-height: 20%; top: -18px">
-        <div id="pageOneTwoDivider">
-            <h1 id="pageOneTwoDividerText"><u>At the start of a grand adventure</u></h1>
-            <p id="pageOneTwoDividerParagraph">Six months ago when I started writing python scripts to hack my wifi I never would have imagined that coding would become a passion of mine.
-                At the time it was just another thing to learn. In six months I've come from being absolutly clueness to being able to make some pretty 
-                interesting software and competing in competitive programming and, most importantly, I know this is just the start. 
-            </p>
-        </div>
-    </div> -->
-    <!--PAGE TWO-->
-    <!-- <div id="pageTwo" class="page"> <a id="pageTwoAnchor"></a>
-        <div id="leftPageTwo" class="half">
-            <div id="leftPageTwoContainer">
-                <div id="leftPageTwoImage"></div>
-                <h1 id="leftPageTwoImageCaption"><u>
-                    Devin Leamy
-                </u></h1>
-                <p id="pageTwoAboutMeText"> 
-                    Hey I'm Devin Leamy a grade 12 student at William Aberhart High School. My life revolves around three 
-                    main pillars: Friends and Family, Programming, and Fitness and Wellbeing. 
-
-                </p>
-            </div>
-        </div>
-
-        <div id="rightPageTwo" class="half">
-            <div id="infoLists">
-                    <ul class="infoList">
-                        <h3 id="listHeader"><u>Experience</u></h3>
-                        <li class="listElement">Java: 6 Months
-                        </li>
-                        <li class="listElement">
-                            C++: 3 Months
-                        </li>
-                        <li class="listElement">
-                            Javascript: 2 Months
-                        </li>
-                        <li class="listElement" id="htmlListElement">
-                            HTML and CSS: 2 Months
-                        </li>
-                        <li>
-                            Python: 7 Months
-                        </li>
-                    </ul>
-                    <ul class="infoList">
-                        <h3 id="listHeader"><u>Pursuits</u></h3>
-                        <li class="listElement">Competitive Coding</li>
-                        <li class="listElement">Competitive Math</li>
-                        <li class="listElement">A Competitive Average</li>
-                        <li class="listElement">Software Engineering Knowhow</li>
-                    </ul>
-                    <ul class="infoList">
-                        <h3 id="listHeader"><u>Activites</u></h3>
-                        <li class="listElement">Member of the University of Calgary Competitive Programming Club</li>
-                        <li class="listElement">Member of William Aberhart Robotics Republic</li>
-                        <li class="listElement">Active YouthCentral Volunteer</li>
-                    </ul>
-                    <ul class="infoList">
-                        <h3 id="listHeader"><u>What I've Done</u></h3>
-                        <li class="listElement">Solved over ___ competitive programming problems</li>
-                        <li class="listElement">Competed in 5 programming contests (winning once)</li>
-                        <li class="listElement">Competed in 3 math contests</li>
-                        <li class="listElement">Created "The Most Primitive Calculator</li>
-                        <li class="listElement">Created "The Ultimate Path Finding Website"</li>
-                        <li class="listElement">Developed email processing software </li>
-    
-                    </ul>
-                </div> 
-        </div>
-    </div> -->
-
-    <!--PAGE THREE-->
-    <!-- <div id="pageThree" class="page"> <a class="anchor" id="pageThreeAnchor"></a>
-        <ul id="projectDisplay">
-            <li id="project">
-                <a href="https://devinleamy.github.io/The-Ultimate-Pathfinding-Website/" class="projectImage" id="projectOne"></a>
-                
-                <div id="projectName">
-                    The Ultimate Path Finding Website
-                </div>
-                <div id="projectDescription">
-                   Want to learn how the most popular pathfinding algorithms work? 
-                   Visit The Ultimate Path Finding Website and learn the fun way.
-                   Pick a start, end, draw barriers, pick an algorthm and watch as the algorithm 
-                   conducts it's search. Create a nice barrier layout? Save it as a custom layout!
-                   <br/>
-                   Made with HTML5, CSS and Javascript
-                </div>
-            </li>
-
-            <li id="project">
-                <a href="https://github.com/DevinLeamy/Competitive-Programming" class="projectImage" id="projectTwo"></a>
-                <div id="projectName">
-                    Competitive Programming
-                </div>
-                <div id="projectDescription">
-                    Competitive programming is in many ways what got me into programming. I really do 
-                    like to solve problems... Here are some of my solutions to competitive programming problems
-                    from Codeforces and Codechef as well as my solutions from contests hosted 
-                    by: CodeVita and The University of Calgary Programming Club.
-                    <br/>
-                    Made with C++ and Java
-                </div>
-            </li>
-
-            <li id="project">
-                    <a href="https://github.com/DevinLeamy/CCC-Solutions" class="projectImage" id="projectThree"></a>
-                <div id="projectName">
-                    Canadian Computing Competition
-                </div>
-                  <div id="projectDescription">
-                    The Canadian Computing Competition is a high school computing competition hosted by The
-                    University of Waterloo. Every year Canadian coders compete for a place at the stage 2 
-                    contest hosted at The University of Waterloo. I like many of these students have gone 
-                    through the previous years of the contest in order to prepare and here are my solutions! 
-                </div>
-            </li>
-
-        </ul>
-        
-    </div> -->
-
     <!--PAGE FOUR-->
     <div id="pageFour" class="page"> <a id="pageFourAnchor"></a>
         <div id="messageInput" action="action_page.php"> 
