@@ -21,12 +21,13 @@ firstly make my first page responsive and then make the whole website responsive
 </head>
 <body>
     <!--PAGE ONE-->
-    <div id="pageOne" class="page">
+    <div id="pageOne" class="page"> <a id="pageOneAnchor"></a>
         <div id="navbar">
             <!--Sticky navbar-->
             <a class="navbarElement" href="#pageFourAnchor">Contact</a>
             <a class="navbarElement" href="#pageThreeAnchor">Portfolio</a>
             <a class="navbarElement" href="#pageTwoAnchor">About</a>
+            <a class="navbarElement" href="#pageOneAnchor" style="color: rgb(0, 197, 0)">Home</a>
         </div>
         <div id="containerForTextFields">
             <h1 id="welcome_message">Junior Developer.</h1>
@@ -279,6 +280,7 @@ firstly make my first page responsive and then make the whole website responsive
     var messageTextArea = document.getElementById("subject");
     var welcome_message = document.getElementById("welcome_message");
     var arrow_button = document.getElementById("arrow_button");
+    var sticky = false;
     function stickyNav() {
         if (window.pageYOffset > 0) {
             navbar.classList.add("sticky")
@@ -286,12 +288,16 @@ firstly make my first page responsive and then make the whole website responsive
             for (i = 0; i < navbarElements.length; i++) {
                 navbarElements[i].style.color = "black";
             }
+            sticky = true;
         } else {
             navbar.classList.remove("sticky")
             for (i = 0; i < navbarElements.length; i++) {
                 navbarElements[i].style.color = "black";
             }
+            sticky = false;
         }
+        var currentPage = 4 - (Math.round(window.pageYOffset / window.innerHeight) + 1);
+        navbarElements[currentPage].style.color = "rgb(0, 197, 0)";
     }
 
 </script>

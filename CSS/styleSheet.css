@@ -1,5 +1,4 @@
 /*  My Offical StyleSheet */
-
 #pageOne {
     /* background-image: url("../Images/Grad_Photos/Seven.jpg"); */
     /* background-image: url("../Images/Grad_Photos/Five.jpg"); */
@@ -30,14 +29,15 @@
     text-align: center;
     padding: 14px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
     transition: color 0.5s linear;
     -moz-transition: color 0.5s linear;  
     -webkit-transition: color 0.5s linear; 
     -ms-transition: color 0.5s linear; 
+    font-weight: 500;
 }
 .sticky {
     overflow: hidden;
@@ -73,8 +73,6 @@
 
 #arrow_button {
     position: absolute;
-    width: 30px;
-    height: 30px;
     border: solid white;
     left: 50%;
     margin-left: -15px;
@@ -84,6 +82,8 @@
     -webkit-transform: rotate(45deg);
     z-index: 50;
     display: inline;
+    width: 30px;
+    height: 30px;
 }
 
 /* Page Two */ 
@@ -93,7 +93,6 @@
     min-height: 100%;
     min-width: 100%;
     overflow-x: hidden;
-    /* background-color: rgb(63, 236, 207); */
     background-image: url("../Images/pageTwoBackground.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
