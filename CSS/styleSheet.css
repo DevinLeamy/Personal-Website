@@ -14,14 +14,13 @@
 #navbar {
     position: absolute;
     z-index: 51;
-    height: 50px;
+    height: 40px;
     min-width: 100%;
     transition: background-color 0.5s linear;
     -moz-transition: background-color 0.5s linear;  
     -webkit-transition: background-color 0.5s linear; 
     -ms-transition: background-color 0.5s linear; 
     padding: 10px;
-    
 } 
 #navbar .navbarElement {
     float: right;
@@ -29,7 +28,7 @@
     text-align: center;
     padding: 14px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     color: black;
@@ -117,7 +116,7 @@
 }
 #pageTwoAnchor {
     position: relative;
-    top: -70px;
+    top: -60px;
 }
 #itemContainer {
     position: absolute;
@@ -283,7 +282,7 @@
 #pageFour {
     background-color: #FFDC00;
     min-width: 100%;
-    position: absolute;
+    position: relative;
 }
 #messageFormContainer {
     position: relative;
@@ -292,7 +291,6 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 #messageFormCaption {
     position: relative;
@@ -313,15 +311,15 @@
 #nameAndEmailDiv {
     position: relative;
     width: 800px;
-    margin-left: 20%;
-    margin-right: 20%;
+    left: 50%;
+    margin-left: -380px;
     margin-top: 75px;
     display: flex;
     flex-direction: ltr;
 }
 #nameInput {
     width: 380px;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 5px;
     resize: none;
     font-size: 15px;
@@ -330,7 +328,7 @@
 }
 #emailInput {
     width: 380px;
-    margin-right: 10px;
+    margin-left: 5px;
     border-radius: 5px;
     resize: none;
     font-size: 15px;
@@ -341,22 +339,25 @@
     width: 780px;
     position: relative;
     height: 150px;
-    margin-left: 20%;
-    margin-right: 20%;
+    left: 50%;
+    margin-left: -380px;
     margin-top: 20px;
     border-radius: 5px;
     resize: none;
     font-size: 15px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 #submitButton {
-    position: relative;
+    position: absolute;
+    display: block;
     height: 30px;
     width: 200px;
     font-size: 20px;
     border-radius: 5px;
     left: 50%;
     margin-left: -100px;
+    font-weight: 400;
 }
 #submitButton:hover {
     opacity: 0.8;
@@ -400,6 +401,64 @@
     font-size: 20px;
 }
 
+/* Footer */
+
+#footerDiv {
+    position: relative;
+    height: 100px;
+    background-color: #25221e;
+    min-width: 100%;
+    width: 1000px;
+}
+#footerContainer {
+    position: relative;
+    width: 800px;
+    height: 100px;
+    left: 50%;
+    margin-left: -400px;
+}
+#footerIconsDiv {
+    position: relative;
+    display: flex;
+    flex-direction: ltr;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    top: 25px;
+    margin-bottom: 30px;
+}
+.footerElement {
+    width: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footerIcon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    margin-left: -20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#githubIcon {
+    display: block;
+    background-image: url("../Images/githubIcon.png");
+}
+#gmailIcon {
+    display: block;
+    background-image: url("../Images/gmailIconClear.png");
+}
+#footerText {
+    position: relative;
+    min-width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
 /* All of the website */
 .anchor {
     position: relative;
