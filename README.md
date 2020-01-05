@@ -1,2 +1,2 @@
 # Personal-Website
-This is going to be my better personal website.
+My (Unfinished) Personal Website. Made using HTML, CSS, Javascript and JQuery.
