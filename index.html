@@ -1,515 +1,245 @@
-/*  My Offical StyleSheet */
-#pageOne {
-    /* background-image: url("../Images/Grad_Photos/Seven.jpg"); */
-    /* background-image: url("../Images/Grad_Photos/Five.jpg"); */
-    background-image: url("../Images/macbookPhoto.jpg");
-    min-height: 100%;
-    min-height: 1200px;
-    min-width: 100%;
-    overflow-x: hidden;
-    -webkit-background-size: cover; 
-     -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-}
-#navbar {
-    position: absolute;
-    z-index: 51;
-    height: 40px;
-    min-width: 100%;
-    transition: background-color 0.5s linear;
-    -moz-transition: background-color 0.5s linear;  
-    -webkit-transition: background-color 0.5s linear; 
-    -ms-transition: background-color 0.5s linear; 
-    padding: 10px;
-} 
-#navbar .navbarElement {
-    float: right;
-    display: block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 20px;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-    transition: color 0.5s linear;
-    -moz-transition: color 0.5s linear;  
-    -webkit-transition: color 0.5s linear; 
-    -ms-transition: color 0.5s linear; 
-    font-weight: 300;
-}
-.sticky {
-    overflow: hidden;
-    top: 0;
-    background-color: white;
-    min-width: 100%;
-    color: black;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/styleSheet.css">
+</head>
+<body>
+    <!--PAGE ONE-->
+    <div id="pageOne" class="page"> <a id="pageOneAnchor"></a>
+        <div id="navbar">
+            <!--Sticky navbar-->
+            <a class="navbarElement" href="#pageFourAnchor">Contact</a>
+            <a class="navbarElement" href="#pageThreeAnchor">Portfolio</a>
+            <a class="navbarElement" href="#pageTwoAnchor">About</a>
+            <a class="navbarElement" href="#pageOneAnchor" style="color: rgb(0, 197, 0)">Home</a>
+        </div>
+        <div id="containerForTextFields">
+            <h1 id="welcome_message">Hi I'm Devin Leamy</h1>
+            <a href="#pageTwoAnchor"><i id="arrow_button"></i></a>
+        </div>
+    </div>
+    <a id="pageTwoAnchor"></a>
+    <div id="pageTwo" class="page"> 
+        <div id="pageTwoHeaderDiv"><h1  id="pageTwoHeader">Junior Developer</h1></div>
+        <div id="itemContainer">
+            <div class="item">
+                <div class="itemImage" id="pursuits"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Pursuits</h1>
+                    <p class="itemText">I'm a highschool student pursuing placement in software engineering and CS programs as well as a summer internship. Additionally, I am striving for software engineering, CP, math, business and management knowhow as this will help me place in contests, build cool software and accomplish my overarching goal.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="html"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">HTML & CSS</h1>
+                    <p class="itemText">I've been learning and working with HTML and CSS for the last 3 months now and it's gotten me to love web development. Not only is it fun to make projects that everyone can access but learning to design and build projects that are not only robust but functional is truly satisfying.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="interests"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Interests</h1>
+                    <p class="itemText">I am a bit of a nerd. I am fascinated by AI and the building of machines that can think. I follow the math world, learn about new proofs and get amazed by how mysterious numbers and shapes can be. Another interest of mine is computer hardware and how the things we all use work at their core. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="python"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Python</h1>
+                    <p class="itemText">Since my programming debut 8 months ago, coding scripts in Kali Linux, I have been learning Python. Over that time I've used many Python libraries including numpy, beautifulsoup, matplotlib and their face recognition library. I can now write Python scripts to do anything from computing lab data to face recognition.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="goals"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Goals</h1>
+                    <p class="itemText">Since getting into programming my biggest goal has been to start a tech company. I'm an entrepreneur at heart and I want this passion of mine to turn into something tangible. As of now like many entrepreneurs I am brainstorming, scrutinizing idea's, making plans and waiting for something convincing enough to act upon.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="java"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Java</h1>
+                    <p class="itemText">After getting into competitive programming 6 months back Java has been my go to. Over time I've expanded my Java repertoire learning Android Studio, the Java graphics and input-output API and the JavaMail API. Java is a multipurpose tool and I can use it as such. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="passTimes"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">Pastimes</h1>
+                    <p class="itemText">Away from school some of my favorite things to do are participate in robotics, play chess, workout, hangout with friends, volunteer, go bouldering and, well, program. More generally, I like to learn, stay social, engaged and in good health and, most notably, have fun. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemImage" id="cpp"></div>
+                <div class="itemTextDiv">
+                    <h1 class="itemTitle">C++</h1>
+                    <p class="itemText">Using C++ over the last 4 Months has been very insightful. Coming from languages like Python and Java, C++ was anything but familiar but through competitive programming I've come to really enjoy C++. It's lower level nature has taught me alot about pointers, stacks and memory and especially in CP it's speed is a gamechanger.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="anchor" id="pageThreeAnchor"></a>
+    <div id="pageThree" class="page">
+        <div id="pageThreeHeaderDiv"><h1  id="pageThreeHeader">Here's What I've Done</h1></div>
+        <div id="projectContainer">
+            <div class="project">
+                <a class="projectImage" id="projectOne" href="https://github.com/DevinLeamy/The-Ultimate-Pathfinding-Website"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">The Ultimate Path Finding Website</h1></li>
+                    <li><p class="projectText"> Want to learn how the most popular pathfinding algorithms work? Visit The Ultimate Path Finding Website and learn the fun way. Pick a start, end, draw barriers, pick an algorthm and watch as the algorithm conducts it's search. Create a nice barrier layout? Save it as a custom layout!</p></li>
+                    <li><h3 class="projectContents">Made with: Javascript & HTML & CSS</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <a class="projectImage" id="projectTwo" href="https://github.com/DevinLeamy/CCC-Solutions"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Canadian Computing Competition</h1></li>
+                    <li><p class="projectText">The Canadian Computing Competition is a high school computing competition hosted by The University of Waterloo. Every year Canadian coders compete for a place at the stage 2 contest hosted at The University of Waterloo. I like many of these students have gone through the previous years of the contest in order to prepare and here are my solutions! </p></li>
+                    <li><h3 class="projectContents">Made with: Java & C++ & Python</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <a class="projectImage" id="projectThree" href="https://github.com/DevinLeamy/Competitive-Programming"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Competitive Programming</h1></li>
+                    <li><p class="projectText">Competitive programming is in many ways what got me into programming. I really do like to solve problems... Here are some of my solutions to competitive programming problems from Codeforces and Codechef as well as my solutions from contests hosted by: CodeVita and The University of Calgary Programming Club.</p></li>
+                    <li><h3 class="projectContents">Made with: C++ & Java</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <a class="projectImage" id="projectFour" href="https://github.com/DevinLeamy/Maze-Solution-Finder"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Maze Solution Finder</h1></li>
+                    <li><p class="projectText">Even when waiting for food at at a restaurant mazes will find you. They are seemingly everywhere. I've created a program that will, give a maze [a matrix of 1's and 0's] find a possible solution and output the solution in a colored jpg file. </p></li>
+                    <li><h3 class="projectContents">Made with: Java</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <a class="projectImage" id="projectFive" href="https://github.com/DevinLeamy/Holiday-Dash"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Holiday Dash</h1></li>
+                    <li><p class="projectText">I believe that good games can be based on simple ideas and Holiday Dash is just that, a fun game based on a rudimentary idea. My Christmas-themed game has players sleigh riding in the dead of winter. While moving at an increasing speed, players are tasked with avoiding trees and dynamically generated obstacles.</p></li>
+                    <li><h3 class="projectContents">Made with: Java</h3></li>
+                </ul>
+            </div>
+            <div class="project">
+                <a class="projectImage" id="projectComingSoon"></a>
+                <ul class="projectDescription">
+                    <li><h1 class="projectTitle">Coming Soon...</h1></li>
+                    <li><p class="projectText">At any given time I always have at least one project in the works. More projects are on the way.</p></li>
+                    <!-- <li><p class="projectContents">Made with: Java? C++? Python? Javascript? Html & CSS? C#?</p></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pageFour">
+        <div id="messageFormContainer">
+            <div id="messageFormCaption">Hit Me Up!</div>
+            <div id="contactMeText">Contact me, let's talk projects and opportunities.</div>
+            <div id="nameAndEmailDiv">
+                <textarea id="nameInput" type="text" placeholder="name"></textarea>
+                <textarea id="emailInput" type="text" placeholder="email"></textarea>
+            </div>
+            <textarea id="messageInput" type="text" placeholder="message"></textarea>
+            <input id="submitButton" type="button" value="submit">
+            <div id="emailAndLocationDiv">
+                <div class="infoElement">
+                    <div class="infoIcon" id="emailIcon"></div>
+                    <div class="infoText">devinleamy@gmail.com</div>
+                </div>
+                <div class="infoElement">
+                    <div class="infoIcon" id="locationIcon"></div>
+                    <div class="infoText">Calgary, Alberta, Canada</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv">
+        <div id="footerContainer">
+            <div id="footerIconsDiv">
+                <div class="footerElement"><a class="infoIcon" id="githubIcon" href="https://github.com/DevinLeamy"></a></div>
+                <div class="footerElement"><a class="infoIcon" id="gmailIcon" href="mailto:devinleamy@gmail.com"></a></div>
+            </div>
+            <div id="footerText">This Website is a Devin Leamy production</div>
+        </div>
+    </div> 
+    <a id="pageFourAnchor"></a>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script>
+    $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 0, function(){ //Change top offset?
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<script>
+    window.onscroll = stickyNav;
+    var submitButton = document.getElementById("submitButton");
+    // submitButton.onClick = //Call email handing php script ;
+    var navbar = document.getElementById("navbar");
+    var navbarElements = document.getElementsByClassName("navbarElement");
+    var inputName = document.getElementById("nameInput");
+    var inputEmailAddress = document.getElementById("emailInput");
+    var messageInput = document.getElementById("messageInput");
+    var welcome_message = document.getElementById("welcome_message");
+    var arrow_button = document.getElementById("arrow_button");
+    var sticky = false;
+    function stickyNav() {
+        if (window.pageYOffset > 0) {
+            navbar.classList.add("sticky")
+            navbar.style.position =  "fixed";
+            for (i = 0; i < navbarElements.length; i++) {
+                navbarElements[i].style.color = "black";
+            }
+            sticky = true;
+        } else {
+            navbar.classList.remove("sticky")
+            for (i = 0; i < navbarElements.length; i++) {
+                navbarElements[i].style.color = "black";
+            }
+            sticky = false;
+        }
+        var currentPage = 4 - (Math.round(window.pageYOffset / window.innerHeight) + 1);
+        navbarElements[currentPage].style.color = "rgb(0, 197, 0)";
+    }
 
-.sticky + .content {
-    padding-top: 60px;
-} 
-#containerForTextFields {
-    position: relative;
-    min-height: 100%;
-    min-width: 100%;
-} 
+    function sendMessage() {
+        var name = inputName.value;
+        var email = inputEmail.value;
+        var message = messageInput.value;
+        if (name.length == 0 || message.length == 0 || !emailIsValid(email)) {
+            return;
+        } else {
+            //Call the php script and send the email
+        }
 
-#welcome_message {
-    position: absolute;
-    font-size: 35px;
-    text-align: center;
-    color: white;
-    margin: auto;
-    width: 400px;
-    top: 46%;
-    left: 50%;
-    margin-left: -200px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    border: solid white;
-    border-width: 4px 4px 4px 4px;
-}
 
-#arrow_button {
-    position: absolute;
-    border: solid white;
-    left: 50%;
-    margin-left: -15px;
-    border-width: 0 10px 10px 0;
-    bottom: 60px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    z-index: 50;
-    display: inline;
-    width: 30px;
-    height: 30px;
-}
+    }
+    function emailIsValid(email) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+            return true;
+        }
+        alert("You have entered an invalid email address!")
+        return false
+    }
 
-/* Page Two */ 
+</script>
 
-#pageTwo {
-    position: relative;
-    min-height: 100%;
-    min-height: 1200px;
-    overflow-y: hidden;
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-image: url("../Images/pageTwoBackground.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#pageTwoHeaderDiv {
-    height: 100px;
-    position: relative;
-}
-#pageTwoHeader {
-    position: absolute;
-    text-align: center;
-    font-size: 35px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    width: 300px;
-    left: 50%;
-    margin-left: -150px;
-    z-index: 2;
-    border: solid white;
-    border-width: 4px 4px 4px 4px;
-    color: white;
-    top: 50px;
-}
-#pageTwoAnchor {
-    position: relative;
-    top: -60px;
-}
-#itemContainer {
-    position: absolute;
-    overflow-y: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: ltr;
-    width: 1200px;
-    left: 50%;
-    margin-left: -593px;
-    margin-top: 100px;
-}
-.item {
-    /* border: solid #AAAAAA; */
-    /* border: solid white; */
-    border: solid white;
-    border-width: 2px 2px 2px 2px;
-    width: 595px;
-    height: 225px;
-    background-color: #FFDC00;
-    /* background-color: #002952; */
-}
-.itemImage {
-    margin: 30px;
-    float: left;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-}
-.itemTextDiv {
-    width: 575px;
-    height: 205px;
-    margin: 10px;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    background-color: white;
-    transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-}
-.itemTextDiv:hover {
-    opacity: 1;
-}
-.itemTitle {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 0;
-    width: 575px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 23px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.itemText {
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    width: 535px;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
 
-#html {
-    background-image: url("../Images/html.png");
-}
-#python {
-    background-image: url("../Images/python.png");
-}
-#java {
-    background-image: url("../Images/java.png");
-}
-#interests {
-    background-image: url("../Images/coding.png")
-}
-#goals {
-    background-image: url("../Images/pursuits.png");
-}
-#passTimes {
-    background-image: url("../Images/hobbies.png")
-}
-#cpp {
-    background-image: url("../Images/cpp.png")
-}
-#pursuits {
-    background-image: url("../Images/goals2.png")
-}
-/* Page Three */
-#pageThree {
-    min-width: 100%;
-    min-height: 100%;
-    min-height: 1200px;
-    position: relative;
-    margin-bottom: 250px;
-}
-#pageThreeAnchor {
-    top: -20px;
-}
-#pageThreeHeaderDiv {
-    height: 100px;
-    position: relative;
-}
-#pageThreeHeader {
-    position: relative;
-    text-align: center;
-    font-size: 35px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    width: 400px;
-    left: 50%;
-    margin-left: -200px;
-    z-index: 2;
-    border: solid black;
-    border-width: 4px 4px 4px 4px;
-    color: black;
-    margin-top: 50px;
-}
-#projectContainer {
-    position: relative;
-    width: 1200px;
-    min-height: 100%;
-    left: 50%;
-    margin-left: -600px;
-}
-.project {
-    position: relative;
-    width: 1180px;
-    height: 200px;
-    margin: 10px;
-}
-.projectImage {
-    display: block;
-    position: absolute;
-    margin: 10px;
-    float: left;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 180px;
-    height: 180px;
-    border-radius: 30px;
-}
-.projectDescription {
-    position: relative;
-    left: 220px;
-    list-style-type: none;
-    margin: 10px;
-}
-.projectTitle {
-    font-weight: 400;
-    font-size: 25px;
-    width: 800px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.projectText {
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 800px;
-}
-.projectContents {
-    font-size: 18px;
-    width: 800px;
-    font-weight: 400;
-    font-family: 'Courier New', Courier, monospace;
-}
-#projectOne {
-    background-image: url("../Images/ProjectPhoto.png");
-}
-#projectTwo {
-    background-image: url("../Images/CCCPhoto3.png");
-}
-#projectThree {
-    background-image: url("../Images/ACPCPhoto.png");
-}
-#projectFour {
-    background-image:  url("../Images/pageTwoBackground.png");
-}
-#projectFive {
-    background-image: url("../Images/HolidayDash.png");
-}
-#projectComingSoon {
-    background-image: url("../Images/coming-soonOne.jpg");
-}
-/*  Page Four */ 
-#pageFour {
-    background-color: #FFDC00;
-    /* min-width: 100%; */
-    position: relative;
-}
-#messageFormContainer {
-    position: relative;
-    min-width: 60%;
-    min-height: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 30px;
-}
-#messageFormCaption {
-    position: relative;
-    min-width: 100px;
-    font-weight: 400;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 50px;
-    top: 20px;
-}
-#contactMeText {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    top: 20px;
-}
-#nameAndEmailDiv {
-    position: relative;
-    width: 800px;
-    left: 50%;
-    margin-left: -380px;
-    margin-top: 75px;
-    display: flex;
-    flex-direction: ltr;
-}
-#nameInput {
-    width: 380px;
-    margin-right: 5px;
-    border-radius: 5px;
-    resize: none;
-    font-size: 15px;
-    height: 17px;
-    overflow: hidden;
-}
-#emailInput {
-    width: 380px;
-    margin-left: 5px;
-    border-radius: 5px;
-    resize: none;
-    font-size: 15px;
-    height: 17px;
-    overflow: hidden;
-}
-#messageInput {
-    width: 780px;
-    position: relative;
-    height: 150px;
-    left: 50%;
-    margin-left: -380px;
-    margin-top: 20px;
-    border-radius: 5px;
-    resize: none;
-    font-size: 15px;
-    overflow: hidden;
-    margin-bottom: 30px;
-}
-#submitButton {
-    position: absolute;
-    display: block;
-    height: 30px;
-    width: 200px;
-    font-size: 20px;
-    border-radius: 5px;
-    left: 50%;
-    margin-left: -100px;
-    font-weight: 400;
-}
-#submitButton:hover {
-    opacity: 0.8;
-}
-#submitButton:active, #submitButton:focus { 
-    outline: none; 
-}
-#emailAndLocationDiv {
-    display: flex;
-    position: relative;
-    width: 600px;
-    left: 50%;
-    margin-left: -300px;
-    flex-direction: ltr;
-    margin-top: 30px;
-}
-.infoElement {
-    width: 240px;
-    margin: 30px;
-}
-.infoIcon {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    left: 50%;
-    margin-left: -20px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#emailIcon {
-    background-image: url("../Images/emailIcon.png");
-} 
-#locationIcon {
-    background-image: url("../Images/locationIcon.png");
-}
-.infoText {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 20px;
-}
 
-/* Footer */
 
-#footerDiv {
-    position: relative;
-    height: 100px;
-    background-color: #25221e;
-    min-width: 100%;
-    width: 1000px;
-}
-#footerContainer {
-    position: relative;
-    width: 800px;
-    height: 100px;
-    left: 50%;
-    margin-left: -400px;
-}
-#footerIconsDiv {
-    position: relative;
-    display: flex;
-    flex-direction: ltr;
-    width: 400px;
-    left: 50%;
-    margin-left: -200px;
-    top: 25px;
-    margin-bottom: 30px;
-}
-.footerElement {
-    width: 240px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.footerIcon {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    margin-left: -20px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#githubIcon {
-    display: block;
-    background-image: url("../Images/githubIcon.png");
-}
-#gmailIcon {
-    display: block;
-    background-image: url("../Images/gmailIconClear.png");
-}
-#footerText {
-    position: relative;
-    min-width: 100%;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-/* All of the website */
-.anchor {
-    position: relative;
-}
-html {
-    scroll-behavior: smooth;
-}
-html, body {
-    height: 100%;
-    background-color: white;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-.page {
-    height: 100%;
-}
+<!--Sub project, onClick send an email from useremail@gmail.com to devinleamy@gmail.com-->
