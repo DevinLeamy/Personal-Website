@@ -37,7 +37,7 @@
     -moz-transition: color 0.5s linear;  
     -webkit-transition: color 0.5s linear; 
     -ms-transition: color 0.5s linear; 
-    font-weight: 500;
+    font-weight: 300;
 }
 .sticky {
     overflow: hidden;
@@ -93,8 +93,8 @@
     position: relative;
     min-height: 100%;
     min-height: 1200px;
-    width: 1800px;
-    max-width: 80%;
+    overflow-y: hidden;
+    max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     background-image: url("../Images/pageTwoBackground.png");
@@ -102,8 +102,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    left: 50%;
-    margin-left: -900px
 }
 #pageTwoHeaderDiv {
     height: 100px;
@@ -129,7 +127,7 @@
     top: -60px;
 }
 #itemContainer {
-    position: relative;
+    position: absolute;
     overflow-y: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -227,6 +225,9 @@
     min-height: 1200px;
     position: relative;
     margin-bottom: 250px;
+}
+#pageThreeAnchor {
+    top: -20px;
 }
 #pageThreeHeaderDiv {
     height: 100px;
