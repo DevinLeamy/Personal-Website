@@ -9,8 +9,9 @@
 <body>
     <!--PAGE ONE-->
     <div id="pageOne" class="page"> <a id="pageOneAnchor"></a>
-        <div id="navbar">
+        <div id="navbar" class="">
             <!--Sticky navbar-->
+            <a class="navbarElement" href="Resume.pdf">Résumé</a>
             <a class="navbarElement" href="#pageFourAnchor">Contact</a>
             <a class="navbarElement" href="#pageThreeAnchor">Portfolio</a>
             <a class="navbarElement" href="#pageTwoAnchor">About</a>
@@ -189,18 +190,18 @@
 <script>
     window.onscroll = stickyNav;
     var submitButton = document.getElementById("submitButton");
-    // submitButton.onClick = //Call email handing php script ;
+    submitButton.onclick = sendMail;
     var navbar = document.getElementById("navbar");
     var navbarElements = document.getElementsByClassName("navbarElement");
     var inputName = document.getElementById("nameInput");
-    var inputEmailAddress = document.getElementById("emailInput");
+    var inputEmail = document.getElementById("emailInput");
     var messageInput = document.getElementById("messageInput");
     var welcome_message = document.getElementById("welcome_message");
     var arrow_button = document.getElementById("arrow_button");
     var sticky = false;
     function stickyNav() {
         if (window.pageYOffset > 0) {
-            navbar.classList.add("sticky")
+            navbar.classList.add("sticky");
             navbar.style.position =  "fixed";
             for (i = 0; i < navbarElements.length; i++) {
                 navbarElements[i].style.color = "black";
@@ -213,22 +214,11 @@
             }
             sticky = false;
         }
-        var currentPage = 4 - (Math.round(window.pageYOffset / window.innerHeight) + 1);
+        var currentPage = 4 - (Math.round(window.pageYOffset / window.innerHeight));
+        if (currentPage == 0) {currentPage = 1;}
         navbarElements[currentPage].style.color = "rgb(0, 197, 0)";
     }
 
-    function sendMessage() {
-        var name = inputName.value;
-        var email = inputEmail.value;
-        var message = messageInput.value;
-        if (name.length == 0 || message.length == 0 || !emailIsValid(email)) {
-            return;
-        } else {
-            //Call the php script and send the email
-        }
-
-
-    }
     function emailIsValid(email) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
             return true;
@@ -236,7 +226,21 @@
         alert("You have entered an invalid email address!")
         return false
     }
-
+    function sendMail() {
+        var name = inputName.value;
+        var email = inputEmail.value;
+        var body = messageInput.value;
+        var subject = "Email sent from " + name + " from my website"
+        if (emailIsValid(email)) {
+            document.write('<a href="mailto:' + email + '?subject=' + subject + '&body=' + body + '">' + 'Click here to send email as well' + '<'+'/a>');
+            Console.log("Email is valid");
+            inputName.value = "";
+            inputEmail.value = "";
+            messageInput.value = "";
+        } else {
+            Console.log("Email is not valid");
+        }
+    }
 </script>
 
 
