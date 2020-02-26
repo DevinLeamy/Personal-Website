@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/styleSheet.css">
+    
 </head>
 <body>
     <!--PAGE ONE-->
@@ -172,6 +173,7 @@
     <a id="pageFourAnchor"></a>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -205,7 +207,6 @@
             navbar.style.position =  "fixed";
             for (i = 0; i < navbarElements.length; i++) {
                 navbarElements[i].style.color = "black";
-                // alert(navbarElements[i].value + " " + i);
             }
             sticky = true;
         } else {
@@ -228,23 +229,27 @@
         return false
     }
     function sendMail() {
+        var message = messageInput.value;
+        var senderEmail = inputEmail.value;
         var name = inputName.value;
-        var email = inputEmail.value;
-        var body = messageInput.value;
-        var subject = "Email sent from " + name + " from my website"
-        if (emailIsValid(email)) {
-            document.write('<a href="mailto:' + email + '?subject=' + subject + '&body=' + body + '">' + 'Click here to send email as well' + '<'+'/a>');
-            Console.log("Email is valid");
-            inputName.value = "";
-            inputEmail.value = "";
-            messageInput.value = "";
+        message = name + " " + message;
+        if (emailIsValid(senderEmail)) {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username : "devins.courier@gmail.com",
+                Password : "Thestrongestpassword1$$$1",
+                To : 'devinleamy@gmail.com',
+                From : "devins.courier@gmail.com",
+                Subject : senderEmail,
+                Body : message,
+            }).then(
+                message => alert("mail sent successfully"),
+                messageInput.value = "",
+                inputEmail.value = "",
+                inputName.value = "",
+            );
         } else {
-            Console.log("Email is not valid");
+            alert("INVALID EMAIL ADDRESS");
         }
     }
 </script>
-
-
-
-
-<!--Sub project, onClick send an email from useremail@gmail.com to devinleamy@gmail.com-->
