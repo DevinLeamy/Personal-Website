@@ -171,6 +171,9 @@
 .itemTextDiv:hover {
     opacity: 1;
 }
+.visible {
+    opacity: 1 !important;
+}
 .itemTitle {
     position: relative;
     margin-top: 20px;

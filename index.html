@@ -200,7 +200,28 @@
     var messageInput = document.getElementById("messageInput");
     var welcome_message = document.getElementById("welcome_message");
     var arrow_button = document.getElementById("arrow_button");
+    var aboutMeTextItems = document.getElementsByClassName("itemTextDiv");
     var sticky = false;
+    var aboutMeTextItemsVisible = [false, false, false, false, false, false, false, false];
+
+    for (var i = 0; i < aboutMeTextItems.length; i++) {
+            aboutMeTextItems[i].addEventListener('click', function() {
+                changeState(i)
+            });
+            aboutMeTextItemsVisible[i] = false;
+            aboutMeTextItems[i].classList.remove("visible");
+    }
+    function changeState(index) {
+        if (aboutMeTextItemsVisible[index]) {
+            alert('removing ' + index + " " + aboutMeTextItems[index].classList);
+            aboutMeTextItemsVisible[index] = false;
+            aboutMeTextItems[index].classList.remove("visible"); 
+        } else {
+            alert('adding ' + index + " " + aboutMeTextItems[index].classList);
+            aboutMeTextItemsVisible[index] = true; 
+            aboutMeTextItems[index].classList.add("visible"); 
+        }
+    }
     function stickyNav() {
         if (window.pageYOffset > 0) {
             navbar.classList.add("sticky");
@@ -252,8 +273,4 @@
             alert("INVALID EMAIL ADDRESS");
         }
     }
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> ef6350c2d4a60bc3f50492e625c420a55b3edb7e
