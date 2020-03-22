@@ -237,8 +237,7 @@
             }
             sticky = false;
         }
-        var currentPage = 4 - (Math.floor(window.pageYOffset / window.innerHeight));
-        if (currentPage == 0) {currentPage = 1;}
+        var currentPage = 4 - (Math.ceil(window.pageYOffset / window.innerHeight));
         navbarElements[currentPage].style.color = "rgb(0, 197, 0)";
     }
 
