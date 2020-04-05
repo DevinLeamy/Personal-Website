@@ -202,24 +202,20 @@
     var arrow_button = document.getElementById("arrow_button");
     var aboutMeTextItems = document.getElementsByClassName("itemTextDiv");
     var sticky = false;
-    var aboutMeTextItemsVisible = [false, false, false, false, false, false, false, false];
 
+    //Adds 'onClick' event listener to text blocks
     for (var i = 0; i < aboutMeTextItems.length; i++) {
-            aboutMeTextItems[i].addEventListener('click', function() {
-                changeState(i)
-            });
-            aboutMeTextItemsVisible[i] = false;
-            aboutMeTextItems[i].classList.remove("visible");
+            aboutMeTextItems[i].addEventListener('click', changeState)
+            aboutMeTextItems[i].classList.remove("visible")
     }
-    function changeState(index) {
-        if (aboutMeTextItemsVisible[index]) {
-            alert('removing ' + index + " " + aboutMeTextItems[index].classList);
-            aboutMeTextItemsVisible[index] = false;
-            aboutMeTextItems[index].classList.remove("visible"); 
+    
+    //Changes the visibility of the text blocks
+    function changeState() {
+        var currentClassList = this.classList
+        if (currentClassList.contains("visible")) {
+            this.classList.remove("visible")
         } else {
-            alert('adding ' + index + " " + aboutMeTextItems[index].classList);
-            aboutMeTextItemsVisible[index] = true; 
-            aboutMeTextItems[index].classList.add("visible"); 
+            this.classList.add("visible")
         }
     }
     function stickyNav() {
